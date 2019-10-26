@@ -1,0 +1,33 @@
+@startuml
+abstract class carpark.Vehicle
+annotation java.lang.Override
+class PredicateDemo2
+class carpark.Car
+class carpark.CarPark
+class carpark.DateTime
+class carpark.MotorBike
+class carpark.Van
+class carpark.WestminsterCarParkManager
+class java.util.ArrayList
+class java.util.Arrays
+class java.util.List
+class java.util.Scanner
+class java.util.function.Predicate
+class java.util.stream.Collectors
+interface carpark.CarParkManager
+PredicateDemo2 ..> carpark.Vehicle
+PredicateDemo2 ..> java.util.ArrayList
+PredicateDemo2 ..> java.util.Arrays
+PredicateDemo2 ..> java.util.List
+PredicateDemo2 ..> java.util.function.Predicate
+carpark.Car --|> carpark.Vehicle
+carpark.DateTime ..> java.lang.Override
+carpark.DateTime ..> java.util.Scanner
+carpark.MotorBike --|> carpark.Vehicle
+carpark.MotorBike ..> java.lang.Override
+carpark.Van --|> carpark.Vehicle
+carpark.WestminsterCarParkManager ..> java.lang.Override
+carpark.WestminsterCarParkManager ..> java.util.function.Predicate
+carpark.WestminsterCarParkManager ..> java.util.stream.Collectors
+carpark.WestminsterCarParkManager --|> carpark.CarParkManager
+@enduml
